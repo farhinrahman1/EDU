@@ -269,11 +269,11 @@ export default function Home() {
                     <p className="text-neutral-800">
                       Your window into your child's academic world
                     </p>
-                    <a href="parent.html">
+                    <Link href="/parent">
                       <button className="rounded-full w-20 bg-black py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
                         GO
                       </button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -295,11 +295,11 @@ export default function Home() {
                     <p className="text-neutral-800">
                       Streamline your teaching experience.
                     </p>
-                    <a href="teacher.html">
+                    <Link href="/teacher">
                       <button className="rounded-full w-20 bg-black py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
                         GO
                       </button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
