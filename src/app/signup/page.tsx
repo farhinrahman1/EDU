@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function SignUp() {
@@ -61,7 +62,7 @@ export default function SignUp() {
                     <p>
                       Already have an account?{" "}
                       <button className="w-50 bg-black rounded-lg p-2 text-[#F5F5DC] font-bold text-sm">
-                        <a href="login.html">Login</a>
+                        <Link href="/login">Login</Link>
                       </button>
                     </p>
                   </div>

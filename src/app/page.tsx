@@ -1,5 +1,8 @@
 import Image from "next/image";
 import linkedin from "../../public/pictures/linkedin.png";
+import fb from "../../public/pictures/fb.png";
+import github from "../../public/pictures/github.png";
+import twitter from "../../public/pictures/twitter.png";
 import Link from "next/link";
 
 export default function Home() {
@@ -241,11 +244,11 @@ export default function Home() {
                   <p className="text-neutral-800">
                     Access all your academic essentials in one place.
                   </p>
-                  <a href="student.html">
+                  <Link href="/student">
                     <button className="rounded-full w-20 bg-black py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
                       GO
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -379,7 +382,7 @@ export default function Home() {
         <div className="w-10">
           <li>
             <a href="https://www.facebook.com/farhin.rahman.169?mibextid=ZbWKwL">
-              <img src="fb.png" alt="Facebook" />
+              <Image src={fb} alt="Facebook" />
             </a>
           </li>
         </div>
@@ -393,14 +396,14 @@ export default function Home() {
         <div className="w-12 mb-3">
           <li>
             <a href="https://github.com/farhinrahman1">
-              <img src="github.png" alt="Github" />
+              <Image src={github} alt="Github" />
             </a>
           </li>
         </div>
         <div className="w-10">
           <li>
             <a href="https://twitter.com/farhinrahman_">
-              <img src="twitter.png" alt="Twitter" />
+              <Image src={twitter} alt="Twitter" />
             </a>
           </li>
         </div>
