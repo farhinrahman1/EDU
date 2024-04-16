@@ -50,7 +50,7 @@ export default function student() {
                   <span className="ml-1">Student Profile</span>
                 </Link>
                 <Link
-                  href="gradesheet.html"
+                  href="/gradesheet"
                   className="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
                 >
                   <svg
@@ -69,7 +69,7 @@ export default function student() {
                   <span className="ml-1">Grade Sheet</span>
                 </Link>
                 <Link
-                  href="exam.html"
+                  href="/exam"
                   className="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
                 >
                   <svg
