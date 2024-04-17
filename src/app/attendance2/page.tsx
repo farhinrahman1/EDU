@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default function teacher() {
+export default function attendance2() {
   return (
     <div className="flex flex-row gap-x-44 bg-white">
       <section className="font-poppins antialiased">
@@ -26,7 +26,7 @@ export default function teacher() {
           </button>
           <div
             id="sidebar"
-            className="bg-[#fff8f8] h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transhtmlForm duration-300 ease-in-out"
+            className="bg-[#fff8f8] h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
             x-show="sidenav"
           >
             <div className="space-y-6 md:space-y-10 mt-10">
@@ -62,24 +62,6 @@ export default function teacher() {
                     <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
                   </svg>
                   <span className="">Teacher Profile</span>
-                </Link>
-                <Link
-                  href="/admission"
-                  className="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
-                >
-                  <svg
-                    className="w-6 h-6 fill-current inline-block"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="">Admission Form</span>
                 </Link>
                 <Link
                   href="/student"
@@ -173,135 +155,98 @@ export default function teacher() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col gap-y-3 mt-9 text-black">
-        <div className="flex flex-row justify-between items-center gap-y-10">
-          <h1 className="text-2xl font-serif font-semibold">Teacher Profile</h1>
-          <button className="bg-black hover:underline text-white font-medium mx-6 px-3 py-1 rounded-lg text-sm">
-            Edit Profile
-          </button>
+      <section className="flex flex-col w-2/4 gap-y-10">
+        <div className="flex flex-row justify-between items-center bg-white p-4 mt-10">
+          <h1 className="text-2xl font-bold font-serif">Attendance Sheet</h1>
+          <div className="flex flex-row gap-x-5">
+            <button className="bg-black text-white px-4 py-2 rounded-lg hover:underline">
+              Download
+            </button>
+            <button className="bg-black text-white px-4 py-2 rounded-lg hover:underline">
+              Print
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="name">
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            style={{ width: 500 }}
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="address">
-            Address
-          </label>
-          <input
-            type="text"
-            name="address"
-            id="address"
-            style={{ width: 500 }}
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="class">
-            Phone
-          </label>
-          <input
-            type="text"
-            name="phone"
-            id="phone"
-            style={{ width: 500 }}
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="email">
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            style={{ width: 500 }}
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="consulation">
-            Consulation
-          </label>
-          <input
-            type="text"
-            name="consulation"
-            id="consulation"
-            style={{ width: 500 }}
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="subject">
-            Spacialization
-          </label>
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            style={{ width: 500 }}
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-x-44 bg-white">
-          <h1 className="text-2xl font-serif font-semibold mt-6 mb-2">
-            Study Materials
-          </h1>
-
-          <div className="flex flex-row gap-y-0 gap-x-5">
-            <div className="">
-              <label className="font-medium" htmlFor="class">
-                Class:
+        <div className="flex flex-col gap-y-4 p-4">
+          <div className="flex flex-row justify-between items-center">
+            <form className="max-w-sm mx-auto">
+              <label
+                htmlFor="class"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Select Class
               </label>
               <select
-                name="class"
                 id="class"
-                className="border-2 border-gray-800 rounded-lg p-1"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black dark:focus:border-blue-500"
               >
-                <option value="class-1">Class 1</option>
-                <option value="class-2">Class 2</option>
-                <option value="class-3">Class 3</option>
-                <option value="class-4">Class 4</option>
-                <option value="class-5">Class 5</option>
-                <option value="class-6">Class 6</option>
-                <option value="class-7">Class 7</option>
-                <option value="class-8">Class 8</option>
-                <option value="class-9">Class 9</option>
-                <option value="class-10">Class 10</option>
+                <option selected>Class 1</option>
+                <option value="class2">Class 2</option>
+                <option value="class3">Class 3</option>
+                <option value="class4">Class 4</option>
+                <option value="class5">Class 5</option>
+                <option value="class6">Class 6</option>
+                <option value="class7">Class 7</option>
+                <option value="class8">Class 8</option>
+                <option value="class9">Class 9</option>
+                <option value="class10">Class 10</option>
               </select>
-            </div>
-            <div className="">
-              <label className="font-medium" htmlFor="study-material">
-                Subject:
+            </form>
+            <form className="max-w-sm mx-auto">
+              <label
+                htmlFor="section"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Select Section
               </label>
               <select
-                name="study-material"
-                id="study-material"
-                className="border-2 border-gray-800 rounded-lg p-1"
+                id="section"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black dark:focus:border-blue-500"
               >
-                <option value="bangla">Bangla</option>
-                <option value="english">English</option>
-                <option value="math">Math</option>
-                <option value="science">Science</option>
-                <option value="social-science">Social Science</option>
-                <option value="religion">Religion</option>
-                <option value="ict">ICT</option>
-                <option value="physical-education">Physical Education</option>
+                <option selected>Section A</option>
+                <option value="sectionB">Section B</option>
+                <option value="sectionC">Section C</option>
+                <option value="sectionD">Section D</option>
+                <option value="sectionE">Section E</option>
+                <option value="sectionF">Section F</option>
               </select>
-            </div>
-            <div className="">
-              <button className="bg-black text-white font-medium px-3 py-1 rounded-lg hover:underline text-sm">
-                GET
-              </button>
+            </form>
+          </div>
+
+          <div className="flex flex-col gap-y-2">
+            <div className="flex flex-col gap-y-1">
+              <div className="flex flex-row justify-between items-center bg-black text-white p-4">
+                <h1 className="text-md font-serif">Roll No</h1>
+                <h1 className="text-md font-serif">Name</h1>
+                <h1 className="text-md font-serif">Attendance</h1>
+              </div>
+              <div className="flex flex-col gap-y-1">
+                <div className="flex flex-row justify-between items-center bg-gray-100 p-1">
+                  <h1 className="text-md font-serif">1.</h1>
+                  <h1 className="text-md font-serif">Sifat Jahan</h1>
+                  <h1 className="text-md font-serif">Present</h1>
+                </div>
+                <div className="flex flex-row justify-between items-center bg-gray-100 p-1">
+                  <h1 className="text-md font-serif">2.</h1>
+                  <h1 className="text-md font-serif">Tanvirul Islam</h1>
+                  <h1 className="text-md font-serif">Present</h1>
+                </div>
+                <div className="flex flex-row justify-between items-center bg-gray-100 p-1">
+                  <h1 className="text-md font-serif">3.</h1>
+                  <h1 className="text-md font-serif">Farhin Rahman</h1>
+                  <h1 className="text-md font-serif">Present</h1>
+                </div>
+                <div className="flex flex-row justify-between items-center bg-gray-100 p-1">
+                  <h1 className="text-md font-serif">4.</h1>
+                  <h1 className="text-md font-serif">Farhana Chowdhury</h1>
+                  <h1 className="text-md font-serif">Present</h1>
+                </div>
+                <div className="flex flex-row justify-between items-center bg-gray-100 p-1">
+                  <h1 className="text-md font-serif">5.</h1>
+                  <h1 className="text-md font-serif">Tashin Ahmed</h1>
+                  <h1 className="text-md font-serif">Present</h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>

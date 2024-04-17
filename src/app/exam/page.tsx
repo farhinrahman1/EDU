@@ -100,8 +100,8 @@ export default function exam() {
                   </svg>
                   <span className="">Exam Routine</span>
                 </Link>
-                <a
-                  href="attendance2.html"
+                <Link
+                  href="/attendance2"
                   className="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:text-base rounded-lg transition duration-150 ease-in-out"
                 >
                   <svg
@@ -117,7 +117,7 @@ export default function exam() {
                     ></path>
                   </svg>
                   <span className="">Attendance Sheet</span>
-                </a>
+                </Link>
                 <Link
                   href="/logout"
                   className="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:text-base rounded-lg transition duration-150 ease-in-out"

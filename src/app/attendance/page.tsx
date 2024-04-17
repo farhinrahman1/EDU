@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default function parent() {
+export default function attendance() {
   return (
     <div className="flex flex-row gap-x-44">
       <section className="font-poppins antialiased">
@@ -48,24 +48,6 @@ export default function parent() {
                     <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
                   </svg>
                   <span className="">Parent Profile</span>
-                </Link>
-                <Link
-                  href="/admission"
-                  className="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
-                >
-                  <svg
-                    className="w-6 h-6 fill-current inline-block"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="">Admission Form</span>
                 </Link>
                 <Link
                   href="/student"
@@ -159,78 +141,73 @@ export default function parent() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col gap-y-3 mt-9 ">
-        <div className="flex flex-row justify-between items-center gap-y-10">
-          <h1 className="text-2xl font-serif font-semibold">Parent Profile</h1>
-          <button className="bg-black text-white font-medium hover:underline mx-6 px-3 py-1 rounded-md text-sm">
-            Edit Profile
-          </button>
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="name">
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium " htmlFor="address">
-            Address
-          </label>
-          <input
-            type="text"
-            name="address"
-            id="address"
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="class">
-            Phone
-          </label>
-          <input
-            type="text"
-            name="phone"
-            id="phone"
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="email">
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="name">
-            Student Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
-        </div>
-        <div className="flex flex-col gap-y-0">
-          <label className="font-medium" htmlFor="class">
-            Student Roll
-          </label>
-          <input
-            type="text"
-            name="class"
-            id="class"
-            className="border-2 border-gray-800 rounded-md p-1"
-          />
+      <section className="flex flex-col mt-16 gap-y-5">
+        <div className="flex flex-col gap-y-5">
+          <h1 className="text-3xl font-serif font-bold text-black">
+            Attendance Sheet
+          </h1>
+          <div className="flex flex-row gap-x-4">
+            <div className="flex flex-col gap-y-4">
+              <label htmlFor="student">Student Name</label>
+              <input
+                type="text"
+                name="student"
+                id="student"
+                className="border border-black rounded-md p-2"
+              />
+            </div>
+            <div className="flex flex-col gap-y-4">
+              <label htmlFor="class">Class</label>
+              <input
+                type="text"
+                name="class"
+                id="class"
+                className="border border-black rounded-md p-2"
+              />
+            </div>
+            <div className="flex flex-col gap-y-4">
+              <label htmlFor="section">Section</label>
+              <input
+                type="text"
+                name="section"
+                id="section"
+                className="border border-black rounded-md p-2"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <label htmlFor="date">Date</label>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              className="border border-black rounded-md p-2"
+            />
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <label htmlFor="attendance">Attendance</label>
+            <select
+              name="attendance"
+              id="attendance"
+              className="border border-black rounded-md p-2"
+            >
+              <option value="present">Present</option>
+              <option value="absent">Absent</option>
+            </select>
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <label htmlFor="remarks">Remarks</label>
+            <textarea
+              name="remarks"
+              id="remarks"
+              className="border border-black rounded-md p-2"
+            ></textarea>
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <button className="bg-black text-white p-2 rounded-md">
+              Submit
+            </button>
+          </div>
         </div>
       </section>
     </div>

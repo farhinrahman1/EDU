@@ -132,8 +132,8 @@ export default function admission() {
                   </svg>
                   <span className="">Exam Routine</span>
                 </Link>
-                <a
-                  href="attendance2.html"
+                <Link
+                  href="/attendance2"
                   className="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
                 >
                   <svg
@@ -149,7 +149,7 @@ export default function admission() {
                     ></path>
                   </svg>
                   <span className="">Attendance Sheet</span>
-                </a>
+                </Link>
                 <Link
                   href="/logout"
                   className="text-sm font-medium text-white bg-black py-2 px-2 hover:bg-white hover:text-black border border-black hover:scale-105 rounded-lg transition duration-150 ease-in-out"
