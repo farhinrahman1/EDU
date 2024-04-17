@@ -258,7 +258,7 @@ export default function admission() {
             <div className="flex flex-col">
               <div className="flex flex-row">
                 <label className="text-lg font-medium" style={{ width: 150 }}>
-                  Father's Name:
+                  Father&apos;s Name:
                 </label>
                 <input
                   type="text"
@@ -270,7 +270,7 @@ export default function admission() {
               </div>
               <div className="flex flex-row">
                 <label className="text-lg font-medium" style={{ width: 150 }}>
-                  Mother's Name:
+                  Mother&apos;s Name:
                 </label>
                 <input
                   type="text"
@@ -282,7 +282,7 @@ export default function admission() {
               </div>
               <div className="flex flex-row">
                 <label className="text-lg font-medium" style={{ width: 150 }}>
-                  Father's Occupation:
+                  Father&apos;s Occupation:
                 </label>
                 <input
                   type="text"
@@ -294,7 +294,7 @@ export default function admission() {
               </div>
               <div className="flex flex-row">
                 <label className="text-lg font-medium" style={{ width: 150 }}>
-                  Mother's Occupation:
+                  Mother&apos;s Occupation:
                 </label>
                 <input
                   type="text"
@@ -306,7 +306,7 @@ export default function admission() {
               </div>
               <div className="flex flex-row">
                 <label className="text-lg font-medium" style={{ width: 150 }}>
-                  Father's Phone:
+                  Father&apos;s Phone:
                 </label>
                 <input
                   type="text"
@@ -318,7 +318,7 @@ export default function admission() {
               </div>
               <div className="flex flex-row">
                 <label className="text-lg font-medium" style={{ width: 150 }}>
-                  Mother's Phone:
+                  Mother&apos;s Phone:
                 </label>
                 <input
                   type="text"
@@ -330,7 +330,7 @@ export default function admission() {
               </div>
               <div className="flex flex-row">
                 <label className="text-lg font-medium" style={{ width: 150 }}>
-                  Father's Email:
+                  Father&apos;s Email:
                 </label>
                 <input
                   type="text"
@@ -342,7 +342,7 @@ export default function admission() {
               </div>
               <div className="flex flex-row">
                 <label className="text-lg font-medium" style={{ width: 150 }}>
-                  Mother's Email:
+                  Mother&apos;s Email:
                 </label>
                 <input
                   type="text"
