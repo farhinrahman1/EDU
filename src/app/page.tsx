@@ -219,15 +219,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto py-8">
-        <div id="modules">
-          <h1 className="mb-4 text-4xl text-center font-extrabold text-[#F5F5DC] dark:text-white md:text-5xl lg:text-6xl">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#A6674C] from-[#F5F5DC]">
-              Modules
-            </span>
-          </h1>
-          <div className="flex justify-center items-center mt-32 mb-32">
+      <div id="modules">
+        <section className="container mx-auto py-16">
+          <div className="flex justify-center items-center mt-20 mb-32">
             <div className="grid grid-cols-1 gap-y-10 gap-x-24 md:grid-cols-2 lg:grid-cols-3">
+              <h1 className="mb-4 text-4xl text-center font-extrabold text-[#F5F5DC] dark:text-white md:text-5xl lg:text-5 xl mt-24">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#A6674C] from-[#F5F5DC]">
+                  Modules
+                </span>
+              </h1>
               <div className="relative group duration-500 cursor-pointer group overflow-hidden text-gray-50 h-96 rounded-2xl hover:duration-700">
                 <div className="w-56 h-72 bg-lime-400 text-gray-800">
                   <img
@@ -249,32 +249,6 @@ export default function Home() {
                       GO
                     </button>
                   </Link>
-                </div>
-              </div>
-
-              <div className="flex items-center w-56 gap-24">
-                <div className="relative group duration-500 cursor-pointer group overflow-hidden text-gray-50 h-96 rounded-2xl hover:duration-700">
-                  <div className="w-56 h-72 bg-[#7abe5f] text-gray-800">
-                    <img
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                      src="https://plus.unsplash.com/premium_photo-1661481509620-6c6523ed0886?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFyZW50cyUyMGhlbHBpbmclMjBraWRzJTIwd2l0aCUyMHN0dWR5fGVufDB8fDB8fHww"
-                      alt="School building"
-                    />
-                  </div>
-                  <div className="absolute bg-[#ffffdd] -bottom-24 w-56 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
-                    <span className="text-lime-500 font-bold text-xs">EDU</span>
-                    <span className="text-gray-800 font-bold text-2xl mb-2">
-                      PARENTS DASHBOARD
-                    </span>
-                    <p className="text-neutral-800">
-                      Your window into your child&apos;s academic world
-                    </p>
-                    <Link href="/parent">
-                      <button className="rounded-full w-20 bg-black py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
-                        GO
-                      </button>
-                    </Link>
-                  </div>
                 </div>
               </div>
 
@@ -305,15 +279,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section className=" text-black py-10">
         <div id="contact">
           <div className="container mx-auto px-4 py-8">
             <div className="max-w-2xl mx-auto bg-[#F5F5DC] p-6 rounded-lg shadow-lg">
               <h1 className="text-4xl font-bold mb-6 text-center">
-                Contact Us
+                Leave Us a Message
               </h1>
               <form action="#" method="post">
                 <div className="mb-4 ml-2">

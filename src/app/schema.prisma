@@ -1,0 +1,75 @@
+model User {
+    id          Int          @id @default(autoincrement())
+    email       String       @unique
+    password    String
+    role        Role
+    gender      String
+    address     String
+    phone       String
+    application Application?
+    grades      Grades[]
+    attendance  Attendance[]
+}
+
+enum Role {
+    STUDENT
+    TEACHER
+}
+
+model Application {
+    id               Int      @id @default(autoincrement())
+    name             String
+    regNo            String
+    class            Int
+    dob              DateTime
+    nationality      String
+    religion         String
+    address          String
+    city             String
+    phone            String
+    fatherName       String
+    fatherOccupation String
+    motherName       String
+    motherOccupation String
+    fatherphone      String
+    motherphone      String
+    fatherEmail      String
+    motherEmail      String?
+    userId           Int      @unique
+    user             User     @relation(fields: [userId], references: [id])
+    status           Int      @default(0)
+}
+
+model Grades {
+    studentId Int
+    student   User   @relation(fields: [studentId], references: [id])
+    subject   String
+    grade     String
+    marks     Int
+
+    @@unique([studentId, subject])
+}
+
+model Exam {
+    subject String
+    date    DateTime
+    class   Int
+
+    @@unique([subject, class])
+}
+
+model Attendance {
+    studentId Int
+    student   User     @relation(fields: [studentId], references: [id])
+    date      DateTime
+    class     Int
+
+    @@unique([studentId, date])
+}
+
+model Message {
+    id      Int    @id @default(autoincrement())
+    name    String
+    email   String
+    message String
+}
