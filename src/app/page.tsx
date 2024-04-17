@@ -267,7 +267,7 @@ export default function Home() {
                       PARENTS DASHBOARD
                     </span>
                     <p className="text-neutral-800">
-                      Your window into your child's academic world
+                      Your window into your child&apos;s academic world
                     </p>
                     <Link href="/parent">
                       <button className="rounded-full w-20 bg-black py-2 px-2 font-com text-sm capitalize text-white shadow shadow-black/60">
