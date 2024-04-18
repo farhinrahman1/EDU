@@ -223,8 +223,8 @@ export default function Home() {
         <section className="container mx-auto py-16">
           <div className="flex justify-center items-center mt-20 mb-32">
             <div className="grid grid-cols-1 gap-y-10 gap-x-24 md:grid-cols-2 lg:grid-cols-3">
-              <h1 className="mb-4 text-4xl text-center font-extrabold text-[#F5F5DC] dark:text-white md:text-5xl lg:text-5 xl mt-24">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#A6674C] from-[#F5F5DC]">
+              <h1 className="mb-4 text-4xl text-center font-extrabold text-[#F5F5DC] dark:text-white md:text-5xl lg:text-5xl mt-24">
+                <span className="text-transparent mr-5 bg-clip-text bg-gradient-to-r to-[#A6674C] from-[#F5F5DC]">
                   Modules
                 </span>
               </h1>
@@ -241,7 +241,7 @@ export default function Home() {
                   <span className="text-gray-800 font-bold text-2xl mb-2">
                     STUDENT DASHBOARD
                   </span>
-                  <p className="text-neutral-800">
+                  <p className="text-neutral-800 font-sans font-semibold">
                     Access all your academic essentials in one place.
                   </p>
                   <Link href="/student">
@@ -266,7 +266,7 @@ export default function Home() {
                     <span className="text-gray-800 font-bold text-2xl mb-2">
                       TEACHERS DASHBOARD
                     </span>
-                    <p className="text-neutral-800">
+                    <p className="text-neutral-800 font-sans font-semibold">
                       Streamline your teaching experience.
                     </p>
                     <Link href="/teacher">
