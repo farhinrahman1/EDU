@@ -17,6 +17,7 @@ export default function studentDetails() {
             type="text"
             name="name"
             id="name"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
@@ -28,6 +29,7 @@ export default function studentDetails() {
             type="text"
             name="address"
             id="address"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
@@ -39,6 +41,7 @@ export default function studentDetails() {
             type="date"
             name="dob"
             id="dob"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
@@ -50,6 +53,7 @@ export default function studentDetails() {
             type="text"
             name="class"
             id="class"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
@@ -61,6 +65,7 @@ export default function studentDetails() {
             type="text"
             name="roll"
             id="roll"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
@@ -72,6 +77,7 @@ export default function studentDetails() {
             type="email"
             name="email"
             id="email"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
