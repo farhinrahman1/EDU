@@ -32,7 +32,7 @@ export default function admission() {
                   name="id"
                   id="id"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -44,7 +44,7 @@ export default function admission() {
                   name="name"
                   id="name"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -56,7 +56,7 @@ export default function admission() {
                   name="regno"
                   id="regno"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -67,7 +67,7 @@ export default function admission() {
                   type="date"
                   name="dob"
                   id="dob"
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -79,7 +79,7 @@ export default function admission() {
                   name="nationality"
                   id="nationality"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -91,7 +91,7 @@ export default function admission() {
                   name="religion"
                   id="religion"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -103,7 +103,7 @@ export default function admission() {
                   name="address"
                   id="address"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -115,7 +115,7 @@ export default function admission() {
                   name="city"
                   id="city"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -127,7 +127,7 @@ export default function admission() {
                   name="phone"
                   id="phone"
                   placeholder=""
-                  className="mb-2 border-2 border-gray-200 rounded-md p-1"
+                  className="mb-2 border-2 border-gray-300 rounded-md p-1"
                 />
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function admission() {
                   name="fname"
                   id="fname"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -153,7 +153,7 @@ export default function admission() {
                   name="mname"
                   id="mname"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -165,7 +165,7 @@ export default function admission() {
                   name="focc"
                   id="focc"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -177,7 +177,7 @@ export default function admission() {
                   name="mocc"
                   id="mocc"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -189,7 +189,7 @@ export default function admission() {
                   name="fphone"
                   id="fphone"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -201,7 +201,7 @@ export default function admission() {
                   name="mphone"
                   id="mphone"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -213,7 +213,7 @@ export default function admission() {
                   name="femail"
                   id="femail"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
               <div className="flex flex-row">
@@ -225,7 +225,7 @@ export default function admission() {
                   name="memail"
                   id="memail"
                   placeholder=" "
-                  className="border-2 mb-2 border-gray-200 rounded-md p-1"
+                  className="border-2 mb-2 border-gray-300 rounded-md p-1"
                 />
               </div>
             </div>

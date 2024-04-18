@@ -12,11 +12,11 @@ export default function gradesheet() {
         </h1>
         <div className="flex flex-row gap-x-3">
           <label className="text-base font-sans font-semibold text-black">
-            Student Roll
+            Student Roll:
           </label>
           <input
             type="text"
-            className="border text-lg font-normal border-black rounded-lg"
+            className="border-2 text-lg font-normal border-gray-300 rounded-md"
             style={{ width: 200 }}
           />
         </div>

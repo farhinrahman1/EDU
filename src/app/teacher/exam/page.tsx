@@ -8,21 +8,22 @@ export default function exam() {
       <Sidebar />
       <section className="flex flex-col w-2/4 gap-y-2">
         <div className="flex flex-row justify-between items-center bg-white p-4 mt-6">
-          <h1 className="text-2xl font-bold font-serif ">Exam Routine</h1>
+          <h1 className="text-2xl font-bold font-serif ml-4 ">Exam Routine</h1>
           <div className="flex flex-row gap-x-5"></div>
         </div>
-        <div className="flex flex-col gap-y-4 p-4">
+        <div className="flex flex-col gap-y-4 p-2">
           <div className="flex flex-row justify-between items-center">
             <form className="max-w-sm">
               <label
                 htmlFor="class"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block ml-8 mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Select Class
               </label>
               <select
                 id="class"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black dark:focus:border-blue-500"
+                style={{ width: 100 }}
+                className="bg-gray-50 ml-6 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-black dark:focus:border-blue-500"
               >
                 <option selected>Class 1</option>
                 <option value="class2">Class 2</option>
