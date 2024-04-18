@@ -17,6 +17,7 @@ export default function applications() {
             type="text"
             name="id"
             id="id"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
@@ -28,6 +29,7 @@ export default function applications() {
             type="text"
             name="name"
             id="name"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
@@ -39,6 +41,7 @@ export default function applications() {
             type="text"
             name="phone"
             id="phone"
+            style={{ width: 400 }}
             className="border-2 border-gray-800 rounded-md p-1"
           />
         </div>
