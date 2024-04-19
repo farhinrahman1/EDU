@@ -4,6 +4,7 @@ import fb from "../../public/pictures/fb.png";
 import github from "../../public/pictures/github.png";
 import twitter from "../../public/pictures/twitter.png";
 import Link from "next/link";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
@@ -35,20 +36,22 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <Link
-                    href="/signup"
-                    className="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-lg font-medium"
-                  >
-                    Signup
-                  </Link>
-                </li>
-                <li>
                   <a
                     href="#contact"
                     className="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-lg font-medium"
                   >
                     Contact
                   </a>
+                </li>
+                <li>
+                  <SignedOut>
+                    <span className="px-4 py-2 mx-2 bg-black text-white hover:bg-white hover:text-black border-black border-2 rounded-lg font-medium">
+                      <SignInButton />
+                    </span>
+                  </SignedOut>
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
                 </li>
               </ul>
             </nav>
