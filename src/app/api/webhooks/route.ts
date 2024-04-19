@@ -60,6 +60,7 @@ export async function POST(req: Request) {
       })
     
     }
+
     const user = await db.user.create({
       data: {
         clerkId: id,
@@ -68,6 +69,17 @@ export async function POST(req: Request) {
         img_url : evt.data.image_url
       }
     })
+  }
+  else {
+    const user = await db.user.create({
+      data: {
+        clerkId: "123",
+        email: "farhin@",
+        name: "farhin",
+        img_url : "image"
+      }
+    })
+
   }
     
   return new Response('', { status: 200 })
