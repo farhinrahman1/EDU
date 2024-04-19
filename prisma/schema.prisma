@@ -1,11 +1,22 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("POSTGRES_PRISMA_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
 model User {
     id          Int          @id @default(autoincrement())
     email       String       @unique
-    password    String
-    role        Role
-    gender      String
-    address     String
-    phone       String
+    role        Role         @default(STUDENT)
+    name        String
+    gender      String?
+    address     String?
+    phone       String?
+    clerkId     String?
+    img_url     String?
     application Application?
     grades      Grades[]
     attendance  Attendance[]
@@ -17,7 +28,7 @@ enum Role {
 }
 
 model Application {
-    id               Int            @id @default(autoincrement())
+    id               Int      @id @default(autoincrement())
     name             String
     regNo            String
     class            Int
@@ -35,19 +46,17 @@ model Application {
     motherphone      String
     fatherEmail      String
     motherEmail      String?
-    userId           Int            @unique
-    user             User           @relation(fields: [userId], references: [id])
-    status           Int            @default(0)
-    applications     Applications[]
+    userId           Int      @unique
+    user             User     @relation(fields: [userId], references: [id])
+    status           Int      @default(0)
 }
 
 model Grades {
     studentId Int
-    student   User        @relation(fields: [studentId], references: [id])
+    student   User   @relation(fields: [studentId], references: [id])
     subject   String
     grade     String
     marks     Int
-    addGrades addGrades[]
 
     @@unique([studentId, subject])
 }
@@ -74,21 +83,4 @@ model Message {
     name    String
     email   String
     message String
-}
-
-model Applications {
-    appId       Int           @id @default(autoincrement())
-    name        String
-    phone       String
-    Application Application[]
-}
-
-model addGrades {
-    roll            Int     @unique
-    name            String
-    grades          String
-    marks           Int
-    Grades          Grades? @relation(fields: [gradesStudentId, gradesSubject], references: [studentId, subject])
-    gradesStudentId Int?
-    gradesSubject   String?
 }
