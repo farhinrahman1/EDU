@@ -33,38 +33,6 @@ export default function applications() {
                   <Link href="/teacher/applications/admission">View Form</Link>
                 </td>
               </tr>
-              <tr>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2 text-center hover:underline">
-                  <Link href="/teacher/applications/admission">View Form</Link>
-                </td>
-              </tr>
-              <tr>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2"> </td>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2 text-center hover:underline">
-                  <Link href="/teacher/applications/admission">View Form</Link>
-                </td>
-              </tr>
-              <tr>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2 text-center hover:underline">
-                  <Link href="/teacher/applications/admission">View Form</Link>
-                </td>
-              </tr>
-              <tr>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2"></td>
-                <td className="border px-4 py-2 text-center hover:underline">
-                  <Link href="/teacher/applications/admission">View Form</Link>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>

@@ -63,7 +63,9 @@ model Grades {
 
 model Exam {
     subject String
-    date    DateTime
+    date    String
+    day     String
+    time    String
     class   Int
 
     @@unique([subject, class])

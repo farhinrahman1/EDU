@@ -6,7 +6,7 @@ export default function exam() {
   return (
     <div className="flex flex-row gap-x-44 bg-white">
       <Sidebar />
-      <div className="max-w-md mx-auto bg-white p-6 rounded-lg -ml-10">
+      <form className="max-w-md mx-auto bg-white p-6 rounded-lg -ml-10">
         <h1 className="text-2xl font-semibold mb-4">Exam Routine</h1>
         <div className="mb-4">
           <label
@@ -34,7 +34,7 @@ export default function exam() {
           </select>
         </div>
         <div className="mb-4">
-          <table className=" mb-4">
+          <table className="mb-4">
             <thead>
               <tr>
                 <th className="p-2 w-2 bg-black text-white">Subject</th>
@@ -46,148 +46,41 @@ export default function exam() {
             <tbody>
               <tr>
                 <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
+                  <input
+                    type="text"
+                    name="subject"
+                    className="focus:outline-none"
+                  />
                 </td>
                 <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
+                  <input
+                    type="text"
+                    name="date"
+                    className="focus:outline-none"
+                  />
                 </td>
                 <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
+                  <input
+                    type="text"
+                    name="day"
+                    className="focus:outline-none"
+                  />
                 </td>
                 <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 p-1.5">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
-                </td>
-                <td className="border border-gray-300">
-                  <input type="text" className="focus:outline-none" />
+                  <input
+                    type="text"
+                    name="time"
+                    className="focus:outline-none"
+                  />
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
+        <button className="bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Add
+        </button>
+      </form>
     </div>
   );
 }

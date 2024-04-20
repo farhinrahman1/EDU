@@ -33,51 +33,6 @@ export default function gradesheet() {
           </thead>
           <tbody className="font-medium">
             <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black">Mathematics</td>
-              <td className="border-[2px] border-black">A+</td>
-              <td className="border-[2px] border-black">95</td>
-            </tr>
-            <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black">Physics</td>
-              <td className="border-[2px] border-black">A</td>
-              <td className="border-[2px] border-black">85</td>
-            </tr>
-            <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black">Chemistry</td>
-              <td className="border-[2px] border-black">A</td>
-              <td className="border-[2px] border-black">85</td>
-            </tr>
-            <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black">Biology</td>
-              <td className="border-[2px] border-black">A</td>
-              <td className="border-[2px] border-black">85</td>
-            </tr>
-            <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black">English</td>
-              <td className="border-[2px] border-black">A</td>
-              <td className="border-[2px] border-black">85</td>
-            </tr>
-            <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black"></td>
-              <td className="border-[2px] border-black"></td>
-              <td className="border-[2px] border-black"></td>
-            </tr>
-            <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black"></td>
-              <td className="border-[2px] border-black"></td>
-              <td className="border-[2px] border-black"></td>
-            </tr>
-            <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black"></td>
-              <td className="border-[2px] border-black"></td>
-              <td className="border-[2px] border-black"></td>
-            </tr>
-            <tr style={{ height: 40 }}>
-              <td className="border-[2px] border-black"></td>
-              <td className="border-[2px] border-black"></td>
-              <td className="border-[2px] border-black"></td>
-            </tr>
-            <tr style={{ height: 40 }}>
               <td className="border-[2px] border-black"></td>
               <td className="border-[2px] border-black"></td>
               <td className="border-[2px] border-black"></td>
