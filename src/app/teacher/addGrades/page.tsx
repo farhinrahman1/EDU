@@ -88,6 +88,76 @@ export default function addGrades() {
                 <input type="text" className="focus:outline-none" />
               </td>
             </tr>
+            <tr>
+              <td className="border px-2 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="number" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="number" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="number" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="number" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+            </tr>
+            <tr>
+              <td className="border px-2 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="number" className="focus:outline-none" />
+              </td>
+              <td className="border px-4 py-2">
+                <input type="text" className="focus:outline-none" />
+              </td>
+            </tr>
           </tbody>
         </table>
         <button className="bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
