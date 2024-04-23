@@ -1,0 +1,13 @@
+Step 1: npm install -D prisma-dbml-generator
+Step 2: prisma.schema te generator er bhitor ei line dhukao - provider = "prisma-dbml-generator"
+Step 3: npx prisma generate
+
+Then ekta file generate hobe prisma folder e
+Oitar lekha gula copy kore dbdiagram.io te paste koro
+
+
+Then paste this:
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}

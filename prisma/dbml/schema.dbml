@@ -1,0 +1,95 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table User {
+  id Int [pk, increment]
+  email String [unique, not null]
+  role Role [not null, default: 'STUDENT']
+  name String [not null]
+  gender String
+  address String
+  phone String
+  clerkId String
+  img_url String
+  application Application
+  grades Grades [not null]
+  attendance Attendance [not null]
+}
+
+Table Application {
+  id Int [pk, increment]
+  name String [not null]
+  regNo String [not null]
+  class Int [not null]
+  dob DateTime [not null]
+  nationality String [not null]
+  religion String [not null]
+  address String [not null]
+  city String [not null]
+  phone String [not null]
+  fatherName String [not null]
+  fatherOccupation String [not null]
+  motherName String [not null]
+  motherOccupation String [not null]
+  fatherphone String [not null]
+  motherphone String [not null]
+  fatherEmail String [not null]
+  motherEmail String
+  userId Int [unique, not null]
+  user User [not null]
+  status Int [not null, default: 0]
+}
+
+Table Grades {
+  studentId Int [not null]
+  student User [not null]
+  subject String [not null]
+  grade String [not null]
+  marks Int [not null]
+
+  indexes {
+    (studentId, subject) [unique]
+  }
+}
+
+Table Exam {
+  subject String [not null]
+  date String [not null]
+  day String [not null]
+  time String [not null]
+  class Int [not null]
+
+  indexes {
+    (subject, class) [unique]
+  }
+}
+
+Table Attendance {
+  studentId Int [not null]
+  student User [not null]
+  date DateTime [not null]
+  class Int [not null]
+
+  indexes {
+    (studentId, date) [unique]
+  }
+}
+
+Table Message {
+  id Int [pk, increment]
+  name String [not null]
+  email String [not null]
+  message String [not null]
+}
+
+Enum Role {
+  STUDENT
+  TEACHER
+}
+
+Ref: Application.userId - User.id
+
+Ref: Grades.studentId > User.id
+
+Ref: Attendance.studentId > User.id
